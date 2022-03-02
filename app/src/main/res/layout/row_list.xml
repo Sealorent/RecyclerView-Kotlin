@@ -34,7 +34,7 @@
             android:layout_height="match_parent"
             android:layout_marginStart="8dp"
             android:textSize="16sp"
-            android:textStyle="bold"
+            android:fontFamily="@font/oswald"
             card_view:layout_constraintEnd_toEndOf="parent"
             card_view:layout_constraintHorizontal_bias="0.0"
             card_view:layout_constraintStart_toEndOf="@+id/img_item_photo"

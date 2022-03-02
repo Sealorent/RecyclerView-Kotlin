@@ -8,14 +8,21 @@ data class UserGit(
    var name: String?,
    var Company: String?,
    var location: String?,
-   var photo: Int
+   var photo: Int,
+   var followers: String?,
+   var following: String?,
+   var repository: String?,
+
 
 ): Parcelable {
     constructor(parcel: Parcel) : this(
         parcel.readString(),
         parcel.readString(),
         parcel.readString(),
-        parcel.readInt()
+        parcel.readInt(),
+        parcel.readString(),
+        parcel.readString(),
+        parcel.readString(),
     ) {
     }
 
@@ -24,6 +31,9 @@ data class UserGit(
         parcel.writeString(Company)
         parcel.writeString(location)
         parcel.writeInt(photo)
+        parcel.writeString(followers)
+        parcel.writeString(following)
+        parcel.writeString(repository)
     }
 
     override fun describeContents(): Int {
